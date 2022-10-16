@@ -1,4 +1,4 @@
-package com.jvmfrog.quickmath;
+package com.jvmfrog.quickmath.ui;
 
 import android.os.Bundle;
 
@@ -14,27 +14,9 @@ public class MainFragment extends Fragment {
 
     private FragmentMainBinding binding;
 
-    private static final int score = 0;
-    private int mParam1;
-
-    public MainFragment() {
-        // Required empty public constructor
-    }
-
-    public static MainFragment newInstance(String param1, String param2) {
-        MainFragment fragment = new MainFragment();
-        Bundle args = new Bundle();
-        args.putInt(param1, score);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getInt(String.valueOf(score));
-        }
     }
 
     @Override
