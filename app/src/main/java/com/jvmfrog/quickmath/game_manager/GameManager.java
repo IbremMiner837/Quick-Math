@@ -36,7 +36,7 @@ public class GameManager {
         mathExample = "";
     }
 
-    private void reset() {
+    public void reset() {
         score = 0;
         lives = 3;
         level = 1;

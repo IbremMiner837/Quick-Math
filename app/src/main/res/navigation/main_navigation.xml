@@ -9,5 +9,14 @@
         android:id="@+id/mainFragment"
         android:name="com.jvmfrog.quickmath.ui.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_easeModeFragment"
+            app:destination="@id/easeModeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/easeModeFragment"
+        android:name="com.jvmfrog.quickmath.ui.EaseModeFragment"
+        android:label="fragment_ease_mode"
+        tools:layout="@layout/fragment_ease_mode" />
 </navigation>
