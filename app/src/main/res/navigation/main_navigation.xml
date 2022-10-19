@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/easeModeFragment"
-        android:name="com.jvmfrog.quickmath.ui.EaseModeFragment"
+        android:name="com.jvmfrog.quickmath.ui.GameFragment"
         android:label="fragment_ease_mode"
-        tools:layout="@layout/fragment_ease_mode" />
+        tools:layout="@layout/fragment_game" />
 </navigation>

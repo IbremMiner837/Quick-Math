@@ -8,15 +8,13 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.jvmfrog.quickmath.R;
-import com.jvmfrog.quickmath.databinding.FragmentEaseModeBinding;
+import com.jvmfrog.quickmath.databinding.FragmentGameBinding;
 import com.jvmfrog.quickmath.game_manager.Game;
 import com.jvmfrog.quickmath.game_manager.GameManager;
 
-public class EaseModeFragment extends Fragment {
+public class GameFragment extends Fragment {
 
-    private FragmentEaseModeBinding binding;
+    private FragmentGameBinding binding;
 
     private Handler handler = new Handler();
     private Handler handler1 = new Handler();
@@ -29,7 +27,7 @@ public class EaseModeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentEaseModeBinding.inflate(inflater, container, false);
+        binding = FragmentGameBinding.inflate(inflater, container, false);
 
         binding.check.setOnClickListener(v -> {
             Game.checkAnswer(Integer.parseInt(binding.answer.getText().toString()));
