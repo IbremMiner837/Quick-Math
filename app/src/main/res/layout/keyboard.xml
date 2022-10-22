@@ -2,27 +2,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardUseCompatPadding="true"
     app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
     style="@style/Widget.Material3.CardView.Elevated">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="8dp">
-
-        <EditText
-            android:id="@+id/password_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:enabled="false"
-            android:minHeight="48dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        android:padding="16dp">
 
         <TableLayout
             android:id="@+id/keyboard"
@@ -35,145 +23,147 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/t9_key_1"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:tag="number_button"
                     android:text="@string/number_one"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton" />
+                    android:textStyle="bold" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/t9_key_2"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:tag="number_button"
                     android:text="@string/number_two"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton" />
+                    android:textStyle="bold" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/t9_key_3"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
                     android:text="@string/number_three"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton" />
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/t9_key_4"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
                     android:text="@string/number_four"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton"/>
+                    android:textStyle="bold" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/t9_key_5"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
                     android:text="@string/number_five"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton"/>
+                    android:textStyle="bold" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/t9_key_6"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
                     android:text="@string/number_six"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton"/>
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/t9_key_7"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
                     android:text="@string/number_seven"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton"/>
+                    android:textStyle="bold" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/t9_key_8"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
                     android:text="@string/number_eight"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton"/>
+                    android:textStyle="bold" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/t9_key_9"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
                     android:text="@string/number_nine"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton"/>
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/t9_key_clear"
+                    android:id="@+id/t9_key_decimal"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
-                    android:text="@string/btn_clear"
+                    android:layout_weight="1"
+                    android:text=","
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton"/>
+                    android:textStyle="bold" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/t9_key_0"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
                     android:text="@string/number_zero"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton"/>
+                    android:textStyle="bold" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/t9_key_backspace"
-                    android:gravity="center"
+                    style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="Back"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    style="@style/Widget.Material3.Button.TonalButton"/>
+                    android:textStyle="bold" />
             </TableRow>
         </TableLayout>
     </LinearLayout>

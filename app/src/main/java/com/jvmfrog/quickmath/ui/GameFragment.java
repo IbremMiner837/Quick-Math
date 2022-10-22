@@ -8,9 +8,13 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputConnection;
+
 import com.jvmfrog.quickmath.databinding.FragmentGameBinding;
 import com.jvmfrog.quickmath.game_manager.Game;
 import com.jvmfrog.quickmath.game_manager.GameManager;
+import com.jvmfrog.quickmath.ui.components.KeyboardView;
 
 public class GameFragment extends Fragment {
 
@@ -29,14 +33,12 @@ public class GameFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentGameBinding.inflate(inflater, container, false);
 
-        binding.check.setOnClickListener(v -> {
-            Game.checkAnswer(Integer.parseInt(binding.answer.getText().toString()));
-            binding.answer.setText("");
-        });
-
         Game.generateInts();
         Game.generateRandomMathExample();
         binding.question.setText(GameManager.getInstance().getMathExample());
+
+        InputConnection ic = binding.answer.onCreateInputConnection(new EditorInfo());
+        binding.keyboard.setInputConnection(ic);
 
         handler.postDelayed(new Runnable() {
             @Override
